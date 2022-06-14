@@ -1,14 +1,11 @@
 import kotlin.math.absoluteValue
 import kotlin.math.pow
+import kotlin.reflect.typeOf
 
 fun main() {
-    var n = 0
-    var number = 1
-    while (number > 0) {
-        number = readln().toInt()
-        if (number > 0) n++
-    }
-    println(n)
+
+    val num = 3
+    if (num > 4) println("The variable is greater than 4")
 
 }
 internal fun twofer(name: String = "you") = "One for $name, one for me."
@@ -32,3 +29,5 @@ fun isGreater(number1: Int,
               number2: Int,
               number3: Int,
               number4: Int) = (number1 + number2) > (number3 + number4)
+
+fun roll(): Int = (1..6).random()
