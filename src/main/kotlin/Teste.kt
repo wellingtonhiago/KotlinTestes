@@ -1,11 +1,10 @@
 import kotlin.math.absoluteValue
 import kotlin.math.pow
+import kotlin.random.Random
 import kotlin.reflect.typeOf
 
 fun main() {
-
-    val num = 3
-    if (num > 4) println("The variable is greater than 4")
+    feedTheFish()
 
 }
 internal fun twofer(name: String = "you") = "One for $name, one for me."
@@ -31,3 +30,17 @@ fun isGreater(number1: Int,
               number4: Int) = (number1 + number2) > (number3 + number4)
 
 fun roll(): Int = (1..6).random()
+fun fishFood (day : String) = when (day) {  "Monday" -> "flakes"
+                                            "Tuesday" -> "pellets"
+                                            "Wednesday" -> "redworms"
+                                            "Thursday" -> "granules"
+                                            "Friday" -> "mosquitoes"
+                                            "Saturday" -> "lettuce"
+                                            "Sunday" -> "plankton"
+                                            else -> "No day, No food"
+}
+fun randomDay() : String = week[(0..week.size).random()]
+    val week = arrayOf ("Monday", "Tuesday", "Wednesday",
+        "Thursday", "Friday", "Saturday", "Sunday")
+
+fun feedTheFish() = println ("Today is ${randomDay()} and the fish eat ${fishFood(randomDay())}")
