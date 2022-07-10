@@ -1,3 +1,5 @@
+package desafios
+
 fun main() {
     val myFirstDice = Dice(6)
     val rollResult = myFirstDice.roll()

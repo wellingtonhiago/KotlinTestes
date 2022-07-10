@@ -1,3 +1,5 @@
+package desafios
+
 fun main() {
 
     val firstCoin = Coin()
