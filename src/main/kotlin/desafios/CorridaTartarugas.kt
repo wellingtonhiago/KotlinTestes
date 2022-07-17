@@ -1,5 +1,0 @@
-package desafios
-
-fun main() {
-
-}

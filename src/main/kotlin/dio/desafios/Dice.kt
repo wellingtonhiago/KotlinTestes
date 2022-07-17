@@ -1,4 +1,4 @@
-package desafios
+package dio.desafios
 
 fun main() {
     val myFirstDice = Dice(6)
